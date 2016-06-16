@@ -8,7 +8,7 @@ public class BMICalculator {
 		System.out.print( "Your height (feet only): " );
 		m = keyboard.nextDouble();
 		
-		ystem.out.print( "Your height (inches): " );
+		System.out.print( "Your height (inches): " );
 		m = keyboard.nextDouble();
 		
 		System.out.print( "Your weight in pounds: " );
