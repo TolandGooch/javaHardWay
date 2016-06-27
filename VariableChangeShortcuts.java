@@ -43,11 +43,11 @@ public class VariableChangeShortcuts {
 		i -= 5;
 		System.out.println( "i: " + i );
 		i = 5;
-		i = i++;
-		i = i++;
-		i = i++;
-		i = i++;
-		i = i++;
+		i++;
+		i++;
+		i++;
+		i++;
+		i++;
 		System.out.println( "i: " + i );
 			
 	}
