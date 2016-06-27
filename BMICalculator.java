@@ -3,18 +3,19 @@ import java.util.Scanner;
 public class BMICalculator {
 	public static void main( String[] args) {
 		Scanner keyboard = new Scanner(System.in);
-		double m, kg, bmi;
+		double tInch, lb, inch, feet, bmi;
 		
 		System.out.print( "Your height (feet only): " );
-		m = keyboard.nextDouble();
+		feet = keyboard.nextDouble();
 		
 		System.out.print( "Your height (inches): " );
-		m = keyboard.nextDouble();
+		inch = keyboard.nextDouble();
 		
 		System.out.print( "Your weight in pounds: " );
-		kg = keyboard.nextDouble();
+		lb = keyboard.nextDouble();
 		
-		bmi = kg / (m*m);
+		tInch = (feet * 12) + inch;
+		bmi = ( lb /(tInch*tInch))*703 ;
 		
 		System.out.println( " Your BMI is " + bmi );
 	}
