@@ -4,16 +4,16 @@ public class SafeSquareRoot {
 	public static void main( String[] args ) {
 		Scanner keyboard = new Scanner(System.in);
 		double x,y;
-		String answer;
+		String answer = "no";
 		
-		while ( !answer.equals("YES!")) {
-			System.out.println( "Are you ready?!? ");
+		while ( !(answer.equals("YES!"))) {
+			System.out.println("Are you ready?!? ");
 			System.out.print("Please enter \"YES!\" when ready.  ");
 			answer = keyboard.next();
 		}
 		
-		System.out.print( "Give me a number, and I'll find it's square root. ");
-		System.out.print( "(No negatives, please.) ");
+		System.out.print("Give me a number, and I'll find it's square root. ");
+		System.out.print("(No negatives, please.) ");
 		x = keyboard.nextDouble();
 		
 		while ( x < 0 ) {
